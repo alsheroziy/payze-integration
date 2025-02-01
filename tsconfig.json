@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esNext",
+     "lib": ["es2017", "esnext.asynciterable"],
+    "module": "commonjs",
+     "baseUrl": "src",
+     "typeRoots": ["node_modules/@types"],
+    "moduleResolution": "node",
+     "allowJs": true,
+     "outDir": "dist",
+     "importHelpers": true,
+     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/config/*": ["./config/*"]
+    }
+  },
+  "include": ["src/**/*.ts", ".env"]
+}
