@@ -2,6 +2,7 @@
 	"compilerOptions": {
 		"target": "esNext",
 		"lib": ["es2017", "esnext.asynciterable"],
+		"experimentalDecorators": true,
 		"module": "commonjs",
 		"baseUrl": "src",
 		"typeRoots": ["node_modules/@types"],
@@ -14,6 +15,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"strict": true,
 		"skipLibCheck": true,
+		"strictPropertyInitialization": false,
 		"paths": {
       "@/*": ["*"],
 			"@/config/*": ["./config/*"],
