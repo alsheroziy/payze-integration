@@ -57,4 +57,4 @@ const orderSchema = new Schema(
 	}
 )
 
-export default model<IOrder & Document>('product', orderSchema)
+export default model<IOrder & Document>('order', orderSchema)
