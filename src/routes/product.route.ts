@@ -4,6 +4,6 @@ import { Router } from 'express'
 const router = Router()
 const productController = new ProductController()
 
-router.post('/products', productController.create)
+router.post('/', productController.create)
 
 export default router

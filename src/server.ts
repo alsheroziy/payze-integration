@@ -2,6 +2,7 @@ import express from 'express'
 
 import { MongoConnect } from '@/config/db.config'
 import { environments } from '@/config/environment.config'
+import { errorMiddleware } from '@/middlewares/error.middleware'
 import indexRoute from '@/routes'
 
 const app = express()
@@ -11,8 +12,7 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/v1', indexRoute)
 
-const mongoConnect = new MongoConnect()
-mongoConnect.init()
+app.use(errorMiddleware)
 
 const start = async () => {
 	const mongoConnect = new MongoConnect()
